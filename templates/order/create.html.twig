@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create Order{% endblock %}
+
+{% block body %}
+
+    {% form_theme order 'bootstrap_5_horizontal_layout.html.twig' %}
+    {{ form_start(order, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    <div class="form-control">
+
+        {{ form_widget(order.email) }}
+
+        <small>{{ form_help(order.email) }}</small>
+
+        <div class="form-error">
+            {{ form_errors(order.email) }}
+        </div>
+
+    </div>
+
+    <div class="form-control">
+
+        {{ form_widget(order.product) }}
+        <span id="product_price"></span>
+
+        <small>{{ form_help(order.product) }}</small>
+
+        <div class="form-error">
+            {{ form_errors(order.product) }}
+        </div>
+
+    </div>
+
+    <div class="form-control">
+
+        <button id="order_create" name="order[create]" type="submit">Create</button>
+
+    </div>
+
+    {{ form_end(order) }}
+
+{% endblock %}

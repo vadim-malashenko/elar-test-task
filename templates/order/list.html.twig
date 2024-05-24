@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Orders{% endblock %}
+
+{% block body %}
+
+    <div style="display: grid; grid-template: 'auto auto auto'">
+        <div>ID</div>
+        <div>Email</div>
+        <div>Product</div>
+        {%  for order in orders %}
+            <div>{{ order.id }}</div>
+            <div>{{ order.email }}</div>
+            <div>{{ order.product.name }}</div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
