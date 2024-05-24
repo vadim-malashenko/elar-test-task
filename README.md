@@ -21,7 +21,6 @@ symfony console make:security:form-login
 
 symfony console make:migration
 symfony console doctrine:migrations:migrate
-
 symfony console make:fixtures
 symfony console doctrine:fixtures:load
 

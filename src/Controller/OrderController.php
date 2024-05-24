@@ -25,7 +25,7 @@ class OrderController extends AbstractController
             $orders = $user->getOrders();
         }
 
-        return $this->render('oreder/list.html.twig', [
+        return $this->render('order/list.html.twig', [
             'user' => $user,
             'orders' => $orders,
         ]);
