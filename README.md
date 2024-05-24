@@ -3,6 +3,8 @@
 mkdir -p vendor/elar && cd vendor/elar
 symfony new shop --webapp && cd shop
 
+composer remove symfony/stimulus-bundle
+composer remove symfony/ux-turbo
 composer require symfony/security-bundle
 composer require symfony/validator
 composer require orm-fixtures --dev
