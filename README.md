@@ -18,7 +18,6 @@ symfony console make:form OrderType
 symfony console make:controller OrderController
 
 symfony console make:security:form-login
-symfony console make:controller Login
 
 symfony console make:migration
 symfony console doctrine:migrations:migrate
