@@ -3,7 +3,7 @@
 ```shell
 mkdir -p vendor/elar && cd vendor/elar
 git clone git@github.com:vadim-malashenko/elar-test-task.git
-cd test-task
+cd elar-test-task
 
 symfony console make:migration
 symfony console doctrine:migrations:migrate
